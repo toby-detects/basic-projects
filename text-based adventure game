@@ -1,0 +1,50 @@
+#pet info --> ch.1
+def pet(): 
+    breed = input("Choose a creature for your pet: \n -Owl \n -Cappybara \n -Cat \nEnter here: ")
+    namepet = input('\nName your pet: ')
+    print(f'\n{namepet} came running, the hungry {breed} dying to be fed')
+    print('\n ----CHAPTER 1----')
+
+name = input('Enter your name, Great Wizard: ')
+
+print(f'\n Welcome adventurer! You are {name}, an ancient wizard with a long white beard and a temperamental broom. Today, like every other day, you rise at dawn to prepare your potions, gather herbs, and tend to your garden... but not everything goes according to plan.')
+print('You wake up in your tower, birds chirping, sun gleaming in your eyes.\n')
+
+firstrout = int(input('Choose your first morning routine: \n 1:Make your tea \n 2:Check your spellbook \n 3:Feed your familiar \n Enter here: '))
+
+while firstrout >= 4:
+    firstrout = int(input('Wrong Input \n Choose your first morning routine: \n 1:Make your tea \n 2:Check your spellbook \n 3:Feed your familiar \n Enter here: '))
+if firstrout == 1:
+    tea = input('\n You got up from your bed and started making tea. \n Available tea in your cabinet: \n -Herbal tea \n -Earl grey \n -Green tea \n -White tea \n Enter here: ')
+    print(f'\n You made your hot {tea} and warm bread while you wonder what today has to offer \n ')
+    pet()
+elif firstrout == 2:
+    print('\n You reached for your spellbook and search for what are you need to do today')
+    pet()
+elif firstrout == 3:
+    print('\n You got up from your bed and called your pet to come.')
+    pet() 
+
+#CHAPTER 1 START
+print('\nObjective: Collect ingredients for your healing and invisibility potions. \n')
+choice1 = int(input('Options: \n1:Go to the garden (safer, but a bit slow). \n2:Venture into the nearby glowing forest (faster, rare herbs, but risky).\n Enter here: '))
+while choice1 > 2:
+    choice1 = int(input('\n Error input \n1:Go to the garden (safer, but a bit slow). \n2:Venture into the nearby glowing forest (faster, rare herbs, but risky). \n Enter here: '))
+    if choice1 == 1:
+        print('you started walking away from your tower, on the way to Faraway Garden')
+    elif choice1 ==2:
+        print('')
+    
+    
+
+
+
+    
+
+
+            
+        
+        
+
+
+
