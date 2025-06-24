@@ -1,0 +1,31 @@
+import random
+
+userchoices = random.choice(['rock', 'paper', 'scissors'])
+
+print(userchoices)
+opps = input('pick:' )
+
+def results():
+  if opps == userchoices:
+    print('draw')
+  elif opps == 'rock' and userchoices == 'paper':
+    print('You lose')
+  elif opps == 'paper' and userchoices == 'scissor':
+    print('You lose')
+  elif opps == 'scissor' and userchoices == 'rock':
+    print('You lose')
+  elif opps == 'paper' and userchoices == 'rock':
+    print('You won')
+  elif opps == 'scissor' and userchoices == 'paper':
+    print('You won')
+  elif opps == 'rock' and userchoices == 'scissor':
+    print('You won')
+
+
+results()
+
+
+
+
+
+
