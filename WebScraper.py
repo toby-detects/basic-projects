@@ -12,7 +12,6 @@ def LinkParser(url):
 
     AllLinks = Parser.find(id="bodyContent").find_all('a')
     random.shuffle(AllLinks)
-    Crawler = 0
     
     for links in AllLinks:
         if links['href'].find("/wiki/"):
